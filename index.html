@@ -5,16 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AreaStore PK</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+    <link rel="shortcut icon" href="Assets/favicon.svg" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Lexend+Peta:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script> -->
+        <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -28,13 +25,15 @@
                     <a href="" id="logo">
                         <h1>AreaStore PK</h1>
                     </a>
-                    <!-- <a href=""><img id="logo" src="Assets/Areastore.png" alt="areastore pk logo"></a> -->
                 </div>
                 <div class="nav-icons">
                     <span class="material-symbols-outlined">shopping_cart</span>
                 </div>
             </div>
             <div id="nav-links">
+                <div class="close-icon">
+                    <span onclick="myFunction()" class="material-symbols-outlined">close</span>
+                </div>
                 <ul>
                     <li><a href="">Home</a></li>
                     <li><a href="">Contact</a></li>
@@ -45,7 +44,7 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="hidden">
             <div class="hero">
                 <img src="Assets/favicon.png" alt="" />
                 <img src="Assets/favicon.png" alt="" />
@@ -162,7 +161,7 @@
             <p id="footer">copyright areastorepk</p>
         </div>
     </footer>
-    <script>
+    <!-- <script>
         function myFunction(){
             const x = document.getElementById('nav-links');
                 if (x.style.display === "block") {
@@ -184,6 +183,6 @@ updateWidthText();
 // Event listener for window resize
 window.addEventListener('resize', updateWidthText);
 
-    </script>
+    </script> -->
 </body>
 </html>
