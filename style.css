@@ -16,6 +16,7 @@
 /* MOBILE FIRST CSS */
 #nav-links {
   display: none;
+  cursor: grab;
 }
 #nav-links ul {
   display: flex;
@@ -41,22 +42,19 @@
   border-bottom: 5px solid var(--primary);
   padding: 10px;
 }
-/* .nav-icons span{
+.nav-icons span{
     display: block;
-} */
+}
 #logo > h1 {
   font-family: "nunito sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
   color: var(--primary);
   font-size: 1.5em;
   letter-spacing: 0.1em;
   text-decoration: none;
   text-transform: uppercase;
-
-  /* width: 270px;
-    mix-blend-mode: multiply; */
 }
 
 .hero {
@@ -107,10 +105,7 @@
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
-.home-sections {
-  /* display: flex; */
-  /* justify-content: center; */
-}
+
 .home-sec-title {
   margin: 20px 0px;
   display: flex;
@@ -120,57 +115,50 @@
   h2,p{
     font-family: "nunito sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: bold;
+    font-weight: 600;
     font-style: normal;
     /* color: var(--primary); */
-    font-size: 1em;
+    font-size: 1.3em;
     letter-spacing: 0.1em;
     text-decoration: none;
     text-transform: uppercase;
   }
 }
+
 .home-card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-  /* grid-template-columns: 1fr 1fr; */
-  gap: 10px 5px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 10px;
 }
+
+.home-cards {
+    flex-basis: calc(50% - 10px);
+    border: 2px solid #dfe5eb;
+    border-radius: 1em;
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .product-image{
-    width: 100%;
   max-width: 100%;
-  aspect-ratio: 1;
-  /* object-fit: cover; */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
 }
-.home-cards {
-    display: flex;
-    width: 200px;
-    /* background-color: blue; */
-    /* height: 280px; */
-    /* border: 1px solid #ECF0F4; */
-    border: 2px solid #dfe5eb;
-    
-    border-radius: 1em;
-}
-.product-card {
-    display: flex;
-    /* align-items: flex-start; */
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-}
+
 .product-info {
-    /* overflow-y: scroll; */
-    /* height: calc(280px - 200px); */
-    /* min-height: 100%; */
-    border-radius: 1em;
-    padding: 13px 10px;
-    /* line-height: 1.078em; */
+    padding: 6px;
+    line-height: 1.078em;
     background-color: #FAFAFA;
-    /* background-color: brown */
-    /* flex: 1; */
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
+
 .product-title {
     font-family: "nunito sans", sans-serif;
     font-optical-sizing: auto;
@@ -179,15 +167,13 @@
     color: black;
     font-size: 0.8125em;
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 4px;
-    /* text-decoration: none; */
-    /* letter-spacing: 0.1em; */
-    /* text-transform: uppercase; */
+    /* margin-bottom: 4px; */
 }
+
 .product-price{
     font-family: "nunito sans", sans-serif;
     font-optical-sizing: auto;
@@ -195,21 +181,17 @@
     font-style: normal;
     color: black;
     font-size: 0.930em;
-    /* text-decoration: none; */
-    /* letter-spacing: 0.1em; */
-    /* text-transform: uppercase; */
 }
+
 .product-prev-price{
     font-family: "nunito sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    /* color: var(--secondary); */
     font-size: 0.780em;
     text-decoration: line-through;
-    /* letter-spacing: 0.1em; */
-    /* text-transform: uppercase; */
 }
+
 footer {
   margin-top: 20px;
   background-color: var(--primary);

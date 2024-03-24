@@ -22,7 +22,7 @@
         <nav>
             <div id="nav-bar">
                 <div class="nav-icons">
-                    <span class="material-symbols-outlined">menu</span>
+                    <span onclick="myFunction()"  class="material-symbols-outlined">menu</span>
                 </div>
                 <div>
                     <a href="" id="logo">
@@ -121,7 +121,7 @@
                             </div>
                         </a>
                     </div>
-                    <div>
+                    <!-- <div>
                         <a href=""><img src="https://picsum.photos/200" alt="" /></a>
                     </div>
                     <div>
@@ -129,7 +129,7 @@
                     </div>
                     <div>
                         <a href=""><img src="https://picsum.photos/200" alt="" /></a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -159,8 +159,31 @@
     </main>
     <footer>
         <div class="footer-section">
-            <p>copyright areastorepk</p>
+            <p id="footer">copyright areastorepk</p>
         </div>
     </footer>
+    <script>
+        function myFunction(){
+            const x = document.getElementById('nav-links');
+                if (x.style.display === "block") {
+                        x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+        }
+        // Function to update block element's inner text with its current width
+function updateWidthText() {
+  const blockElement = document.getElementById('footer');
+  const width = blockElement.offsetWidth; // Get current width of the block element
+  blockElement.textContent = `Current Width: ${width}px`; // Update inner text with width value
+}
+
+// Initial call to update width text
+updateWidthText();
+
+// Event listener for window resize
+window.addEventListener('resize', updateWidthText);
+
+    </script>
 </body>
 </html>
